@@ -1,7 +1,7 @@
 # Module11_BDD
 
 START project:
-npm i
+npm install
 
 Running tests with TAGS:
 npm test -- --tags "@so_discount_filter"
