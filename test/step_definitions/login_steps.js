@@ -15,6 +15,7 @@ When('I login with {string} email and {string} password', async function(email, 
    browser.sleep(2000);
    await element(by.xpath('//a[.="Sign In"]')).click();
    await element(by.className('qa-email-textbox')).sendKeys(email);
+   browser.sleep(1000);
    await element(by.className('qa-password-textbox')).sendKeys(password);
    browser.sleep(5000);
    await element(by.id('signin')).click();

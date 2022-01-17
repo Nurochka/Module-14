@@ -33,7 +33,7 @@ When('I search for {string}', async function(clothes) {
  
  Then('Filtered search results should be more than {string} and less than {string}', async function(discount1, discount2) {
      const amount = Math.abs(parseFloat(await element(by.className('_1MVUcS8')).getText()));
-     expect(amount).to.be.above(parseFloat(discount1)).and.to.be.below(parseFloat(discount2));
+     expect(amount).to.be.at.least(parseFloat(discount1)).and.to.be.at.most(parseFloat(discount2));
  });
 
 
