@@ -3,7 +3,7 @@ Feature: Search and Filter
 
 @so_discount_filter
 Scenario Outline: Search <item> with "<discount1> - <discount2>" discount  
-When I open "https://www.asos.com/" url
+When I open "Home" page
     And I search for "<item>" 
     And I filter search results by "<discount1> - <discount2>" value
     And I wait "5" seconds
@@ -13,4 +13,4 @@ Then Filtered search results should have "<item>" in name
     Examples:
     | item   | discount1  | discount2 |
     | dress  | 20%        | 30%       |
-    | heel  | 40%        | 50%       |
+    | heel   | 40%        | 50%       |

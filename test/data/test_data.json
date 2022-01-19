@@ -1,0 +1,11 @@
+{
+    "User": {
+        "Name": "Test",
+        "Email": "test.account.2022@mail.ru",
+        "Password": "FTM_Basics@2022"
+    },
+
+    "Page":{
+        "url": "https://www.asos.com/"
+    }
+}

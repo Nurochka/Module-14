@@ -1,34 +1,37 @@
 const { When, Then, setDefaultTimeout} = require('cucumber');
 const { expect } = require('chai');
-const { element } = require('protractor');
+const PageFactory = require('../page_objects/page_factory');
+//const data = require('../data/test_data.json');
+
+const pageFactory = new PageFactory();
 
 setDefaultTimeout(60000);
 
-When('I open {string} url', function(url) {
-    browser.get(url);
-    browser.manage().window().maximize();
+When('I open {string} page', async function(pageName) {
+    const page = await pageFactory.getPage(pageName);
+    return page.open();    
 });
-
 
 When('I login with {string} email and {string} password', async function(email, password) {
-   await element(by.id('myAccountDropdown')).click();
-   browser.sleep(2000);
-   await element(by.xpath('//a[.="Sign In"]')).click();
-   await element(by.className('qa-email-textbox')).sendKeys(email);
-   browser.sleep(1000);
-   await element(by.className('qa-password-textbox')).sendKeys(password);
-   browser.sleep(5000);
-   await element(by.id('signin')).click();
+    const page = await pageFactory.getPage();
+    await page.MyAccount.click();
+    browser.sleep(2000);    
+    await page.SignInLink.click();   
+    await page.Email.EnterText(email);  
+    await page.Password.EnterText(password);
+    await page.SignInButton.click();    
 });
 
-When('I wait "{int}" seconds', function(timeinSeconds) {
-    return browser.sleep(timeinSeconds*1000);
+When('I wait "{int}" seconds', async function(timeinSeconds) {
+    const page = await pageFactory.getPage();
+    return page.wait(timeinSeconds * 1000);
 });
 
 
 Then('User name {string} is displayed on a page', async function(user_name) {
-    await element(by.id('myAccountDropdown')).click();
-    browser.sleep(5000);
-    const name = await element(by.className('tiqiyps')).getText();
+    const page = await pageFactory.getPage();
+    await page.MyAccount.click();
+    browser.sleep(2000);
+    const name = await page.UserName.getText();
     expect(name).to.be.equal('Hi '+ user_name);
 });

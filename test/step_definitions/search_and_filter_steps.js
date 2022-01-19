@@ -1,39 +1,39 @@
 const { When, Then, setDefaultTimeout} = require('cucumber');
 const { expect } = require('chai');
-const { element } = require('protractor');
+const PageFactory = require('../page_objects/page_factory');
+
+const pageFactory = new PageFactory();
 
 setDefaultTimeout(60000);
 
 When('I search for {string}', async function(clothes) {
- 
-    await element(by.id('chrome-search')).sendKeys(clothes);
-    await element(by.className('kH5PAAC _1KRfEms')).click();
-    browser.sleep(2000);
-    if (await element(by.className('_1M-cSy1 yk-nJ7N')).isPresent()){  //to close pop-up if appears
-        await element(by.className('_1M-cSy1 yk-nJ7N')).click();
+    const page = await pageFactory.getPage();
+    await page.SearchField.EnterText(clothes);
+    await page.SearchIcon.click(); 
+    if (await page.ButtonOnPopUp.isPresent()){  //to close pop-up if appears
+        await page.ButtonOnPopUp.click();
         browser.sleep(2000);
-        await element(by.className('glYZgHa')).click();
+        await page.CloseIconOnPopUp.click();
     } 
  });
  
  When('I filter search results by {string} value', async function(discount) {
-    await element(by.buttonText('Discount %')).click();
-    browser.sleep(2000);
-    const listOfElements = element.all(by.className('kx2nDmW'));
-    const arrayOfElementTexts = await listOfElements.getText();
-    const withoutCounter = arrayOfElementTexts.map(el => el.slice(0,9));
-    const elementToClickIndex = withoutCounter.indexOf(discount);
-    return await listOfElements.get(elementToClickIndex).click();     
+    const page = await pageFactory.getPage();
+    await page.Menu.DiscountFilter.click(); 
+    const listOfElements = await page.Menu.DiscountValues;
+    return await listOfElements.clickElementByText(discount);     
 });    
  
  Then('Filtered search results should have {string} in name', async function(item) {
-     const name = await element(by.className('_3J74XsK')).getText();
-     expect(name).to.include(item);
+    const page = await pageFactory.getPage(); 
+    const name = await page.FirstSearchResultText.getText();
+    expect(name).to.include(item);
  });
  
  Then('Filtered search results should be more than {string} and less than {string}', async function(discount1, discount2) {
-     const amount = Math.abs(parseFloat(await element(by.className('_1MVUcS8')).getText()));
-     expect(amount).to.be.at.least(parseFloat(discount1)).and.to.be.at.most(parseFloat(discount2));
+    const page = await pageFactory.getPage();  
+    const amount = Math.abs(parseFloat(await page.FirstSearchResultDiscount.getText()));
+    expect(amount).to.be.at.least(parseFloat(discount1)).and.to.be.at.most(parseFloat(discount2));
  });
 
 
