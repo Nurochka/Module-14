@@ -1,6 +1,102 @@
 [
   {
     "keyword": "Feature",
+    "name": "Login",
+    "line": 2,
+    "id": "login",
+    "tags": [
+      {
+        "name": "@smoke",
+        "line": 1
+      }
+    ],
+    "uri": "test\\features\\login.feature",
+    "elements": [
+      {
+        "id": "login;login-with-test-account-user",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Login with Test Account user",
+        "tags": [
+          {
+            "name": "@smoke",
+            "line": 1
+          },
+          {
+            "name": "@asos_login",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open \"Home\" page",
+            "match": {
+              "location": "test\\step_definitions\\login_steps.js:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3576000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login with \"test.account.2022@mail.ru\" email and \"FTM_Basics@2022\" password",
+            "match": {
+              "location": "test\\step_definitions\\login_steps.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2163000000,
+              "error_message": "ElementNotVisibleError: element not interactable\n  (Session info: chrome=97.0.4692.99)\n  (Driver info: chromedriver=97.0.4692.20 (6559bb085abcaedffe35d268b3546c43f755151c-refs/branch-heads/4692@{#186}),platform=Windows NT 10.0.19043 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Element.click (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\page_objects\\base_elements\\base_element.js:20:29)\n    at World.<anonymous> (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\step_definitions\\login_steps.js:19:27)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I wait \"5\" seconds",
+            "match": {
+              "location": "test\\step_definitions\\login_steps.js:25"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "User name \"Test\" is displayed on a page",
+            "match": {
+              "location": "test\\step_definitions\\login_steps.js:31"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "keyword": "Feature",
     "name": "Search and Filter",
     "line": 2,
     "id": "search-and-filter",
@@ -39,7 +135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 7191000000
+              "duration": 1014000000
             }
           },
           {
@@ -52,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2651000000
+              "duration": 4279000000
             }
           },
           {
@@ -65,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 414000000
+              "duration": 775000000
             }
           },
           {
@@ -78,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5102000000
+              "duration": 5008000000
             }
           },
           {
@@ -91,7 +187,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 31000000
+              "duration": 41000000
             }
           },
           {
@@ -104,7 +200,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 28000000
+              "duration": 26000000
             }
           },
           {
@@ -115,7 +211,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 0
             }
           }
         ]
@@ -147,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 792000000
+              "duration": 842000000
             }
           },
           {
@@ -160,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3854000000
+              "duration": 1336000000
             }
           },
           {
@@ -173,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 778000000
+              "duration": 438000000
             }
           },
           {
@@ -186,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5006000000
+              "duration": 5024000000
             }
           },
           {
@@ -199,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 33000000
+              "duration": 27000000
             }
           },
           {
@@ -212,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 21000000
             }
           },
           {
