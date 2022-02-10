@@ -44,10 +44,6 @@ exports.config = {
   }, 
 
   afterLaunch: () => {
-    return reporter.generate(reportOptions);
-  },
-
-  afterLaunch: () => {
-    return cucumberJunitConvert.convert(options);
+    return reporter.generate(reportOptions) && cucumberJunitConvert.convert(options);
    }
 };

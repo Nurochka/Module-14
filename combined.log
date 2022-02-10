@@ -9,52 +9,22 @@ info: Checking presence of "ButtonOnPopUp"
 info: Clicking "ButtonOnPopUp"
 info: Clicking "CloseIconOnPopUp"
 info: Clicking "DiscountFilter"
-info: Texts of "DiscountValues" are [Up to 20%(148),20% - 30%(1,437),30% - 40%(2,350),40% - 50%(3,204),50% - 60%(2,623),60% - 70%(1,721),70% or more(707)]
-info: Texts of "DiscountValues" are [Up to 20%(148),20% - 30%(1,437),30% - 40%(2,350),40% - 50%(3,204),50% - 60%(2,623),60% - 70%(1,721),70% or more(707)]
+info: Texts of "DiscountValues" are [Up to 20%(196),20% - 30%(1,686),30% - 40%(2,668),40% - 50%(3,126),50% - 60%(2,639),60% - 70%(1,929),70% or more(797)]
+info: Texts of "DiscountValues" are [Up to 20%(196),20% - 30%(1,686),30% - 40%(2,668),40% - 50%(3,126),50% - 60%(2,639),60% - 70%(1,929),70% or more(797)]
 debug: Element with [20% - 30%] text index is [1]
 debug: Clicking [undefined] element with [1] index
 debug: Waiting [5000] milliseconds
-info: "FirstSearchResultText" element text is Vero Moda Tall high neck jumper dress in camel
+info: "FirstSearchResultText" element text is New Look long sleeve mini dress with collar detail in brown floral
 info: "FirstSearchResultDiscount" element text is -25%
 debug: Opening [https://www.asos.com/] url
 info: Searching for heel
 info: Clicking "SearchIcon"
 info: Checking presence of "ButtonOnPopUp"
 info: Clicking "DiscountFilter"
-info: Texts of "DiscountValues" are [Up to 20%(51),20% - 30%(336),30% - 40%(469),40% - 50%(328),50% - 60%(140),60% - 70%(69),70% or more(12)]
-info: Texts of "DiscountValues" are [Up to 20%(51),20% - 30%(336),30% - 40%(469),40% - 50%(328),50% - 60%(140),60% - 70%(69),70% or more(12)]
+info: Texts of "DiscountValues" are [Up to 20%(43),20% - 30%(327),30% - 40%(452),40% - 50%(312),50% - 60%(177),60% - 70%(74),70% or more(12)]
+info: Texts of "DiscountValues" are [Up to 20%(43),20% - 30%(327),30% - 40%(452),40% - 50%(312),50% - 60%(177),60% - 70%(74),70% or more(12)]
 debug: Element with [40% - 50%] text index is [3]
 debug: Clicking [undefined] element with [3] index
 debug: Waiting [5000] milliseconds
-info: "FirstSearchResultText" element text is ASOS DESIGN Ruby studded block heel boots in black
-info: "FirstSearchResultDiscount" element text is -49%
-info: Disabling protractor sync
-debug: Opening [https://www.asos.com/] url
-info: Clicking "MyAccount"
-info: Clicking "SignInLink"
-debug: Opening [https://www.asos.com/] url
-info: Searching for dress
-info: Clicking "SearchIcon"
-info: Checking presence of "ButtonOnPopUp"
-info: Clicking "ButtonOnPopUp"
-info: Clicking "CloseIconOnPopUp"
-info: Clicking "DiscountFilter"
-info: Texts of "DiscountValues" are [Up to 20%(148),20% - 30%(1,437),30% - 40%(2,350),40% - 50%(3,204),50% - 60%(2,623),60% - 70%(1,721),70% or more(707)]
-info: Texts of "DiscountValues" are [Up to 20%(148),20% - 30%(1,437),30% - 40%(2,350),40% - 50%(3,204),50% - 60%(2,623),60% - 70%(1,721),70% or more(707)]
-debug: Element with [20% - 30%] text index is [1]
-debug: Clicking [undefined] element with [1] index
-debug: Waiting [5000] milliseconds
-info: "FirstSearchResultText" element text is Vero Moda Tall high neck jumper dress in camel
-info: "FirstSearchResultDiscount" element text is -25%
-debug: Opening [https://www.asos.com/] url
-info: Searching for heel
-info: Clicking "SearchIcon"
-info: Checking presence of "ButtonOnPopUp"
-info: Clicking "DiscountFilter"
-info: Texts of "DiscountValues" are [Up to 20%(51),20% - 30%(336),30% - 40%(469),40% - 50%(328),50% - 60%(140),60% - 70%(69),70% or more(12)]
-info: Texts of "DiscountValues" are [Up to 20%(51),20% - 30%(336),30% - 40%(469),40% - 50%(328),50% - 60%(140),60% - 70%(69),70% or more(12)]
-debug: Element with [40% - 50%] text index is [3]
-debug: Clicking [undefined] element with [3] index
-debug: Waiting [5000] milliseconds
-info: "FirstSearchResultText" element text is ASOS DESIGN Ruby studded block heel boots in black
-info: "FirstSearchResultDiscount" element text is -49%
+info: "FirstSearchResultText" element text is ASOS DESIGN Wide Fit Embrace leather high-heeled square toe boots in black
+info: "FirstSearchResultDiscount" element text is -44%

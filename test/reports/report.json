@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 3576000000
+              "duration": 4370000000
             }
           },
           {
@@ -52,8 +52,8 @@
             },
             "result": {
               "status": "failed",
-              "duration": 2163000000,
-              "error_message": "ElementNotVisibleError: element not interactable\n  (Session info: chrome=97.0.4692.99)\n  (Driver info: chromedriver=97.0.4692.20 (6559bb085abcaedffe35d268b3546c43f755151c-refs/branch-heads/4692@{#186}),platform=Windows NT 10.0.19043 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\AppData\\Roaming\\npm\\node_modules\\protractor\\built\\element.js:831:22)\n    at Element.click (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\page_objects\\base_elements\\base_element.js:20:29)\n    at World.<anonymous> (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\step_definitions\\login_steps.js:19:27)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
+              "duration": 2793000000,
+              "error_message": "ElementNotVisibleError: element not interactable\n  (Session info: chrome=98.0.4758.82)\n  (Driver info: chromedriver=98.0.4758.48 (d869ab3eda60629b9fabbd4e30c0f833466c83fd-refs/branch-heads/4758@{#415}),platform=Windows NT 10.0.19043 x86_64)\n    at Object.checkLegacyResponse (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\error.js:546:15)\n    at parseHttpResponse (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\http.js:509:13)\n    at C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\http.js:441:30\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)\nFrom: Task: WebElement.click()\n    at Driver.schedule (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\webdriver.js:807:17)\n    at WebElement.schedule_ (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2010:25)\n    at WebElement.click (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\webdriver.js:2092:17)\n    at actionFn (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\protractor\\built\\element.js:89:44)\n    at Array.map (<anonymous>)\n    at C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\protractor\\built\\element.js:461:65\n    at ManagedPromise.invokeCallback_ (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\promise.js:1376:14)\n    at TaskQueue.execute_ (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\promise.js:3084:14)\n    at TaskQueue.executeNext_ (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\promise.js:3067:27)\n    at C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\promise.js:2927:27\n    at C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\selenium-webdriver\\lib\\promise.js:668:7\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)Error\n    at ElementArrayFinder.applyAction_ (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\protractor\\built\\element.js:459:27)\n    at ElementArrayFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\protractor\\built\\element.js:91:29)\n    at ElementFinder.<computed> [as click] (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\node_modules\\protractor\\built\\element.js:831:22)\n    at Element.click (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\page_objects\\base_elements\\base_element.js:20:29)\n    at World.<anonymous> (C:\\Users\\Hanna_Ivanova\\Projects\\auto-basic\\Module-14\\test\\step_definitions\\login_steps.js:19:27)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)"
             }
           },
           {
@@ -135,7 +135,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1014000000
+              "duration": 1362000000
             }
           },
           {
@@ -148,7 +148,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 4279000000
+              "duration": 5098000000
             }
           },
           {
@@ -161,7 +161,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 775000000
+              "duration": 857000000
             }
           },
           {
@@ -174,7 +174,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5008000000
+              "duration": 5015000000
             }
           },
           {
@@ -187,7 +187,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 41000000
+              "duration": 52000000
             }
           },
           {
@@ -200,7 +200,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 26000000
+              "duration": 48000000
             }
           },
           {
@@ -211,7 +211,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 0
+              "duration": 1000000
             }
           }
         ]
@@ -243,7 +243,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 842000000
+              "duration": 1526000000
             }
           },
           {
@@ -256,7 +256,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1336000000
+              "duration": 2599000000
             }
           },
           {
@@ -269,7 +269,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 438000000
+              "duration": 936000000
             }
           },
           {
@@ -282,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 5024000000
+              "duration": 5012000000
             }
           },
           {
@@ -295,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 27000000
+              "duration": 24000000
             }
           },
           {
@@ -308,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 21000000
+              "duration": 25000000
             }
           },
           {
